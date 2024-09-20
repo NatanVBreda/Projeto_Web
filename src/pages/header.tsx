@@ -3,7 +3,7 @@ import "../styles/header.css";
 import "../styles/utility.css";
 import { useState, useEffect } from 'react';  // Importando o useEffect
 import Button from "../components/Button";
-import Close from "../assets/Close.svg";
+import Close from "../assets/close.svg";
 import Menu from "../assets/hamburguer.svg";
 import "../styles/buttons.css";
 
