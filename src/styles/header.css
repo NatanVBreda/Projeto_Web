@@ -1,11 +1,11 @@
 .reverse-color {
   color: #ff3b3b;
   overflow-x: hidden;
-  transition: color 0.3s ease; /* Transição suave para a cor */
+  transition: color 0.3s ease; 
 }
 
 .reverse-color:hover {
-  color: var(--primary-color); /* Muda a cor ao passar o mouse */
+  color: var(--primary-color); 
 }
 
 .ml-lg {
@@ -43,7 +43,7 @@
   font-size: var(--fs-lg);
 }
 
-/* Responsividade para telas maiores (Desktop) */
+
 @media (min-width: 1280px) {
   .container {
     --max-width: 1050px;
@@ -51,7 +51,7 @@
   }
 
   .desktop-only {
-    display: initial; /* Elementos visíveis apenas em desktops */
+    display: initial; 
   }
 
   .even-columns {
@@ -69,7 +69,7 @@
   }
 
   .mobile-menu {
-    display: none; /* Esconde o menu mobile em telas grandes */
+    display: none; 
     overflow-y: hidden;
   }
 
@@ -78,22 +78,29 @@
   }
 }
 
-/* Responsividade para telas pequenas (Mobile) */
+
 @media (max-width: 768px) {
   .reverse-color {
-    font-size: 18px; /* Ajuste no tamanho da fonte para mobile */
+    font-size: 18px;
   }
 
   .ml-lg {
     margin-right: 1rem;
-    width: 90px; /* Diminui a largura para telas pequenas */
+    width: 90px; 
   }
 
   .mobile-menu-content ul {
-    gap: 2rem; /* Ajusta o espaçamento entre itens no menu mobile */
+    gap: 2rem; 
   }
 
   .mobile-menu-content a {
-    font-size: var(--fs-md); /* Ajuste no tamanho da fonte no mobile */
+    font-size: var(--fs-md); 
   }
+}
+
+.scroll {
+  overflow: hidden !important;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
 }

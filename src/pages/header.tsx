@@ -1,7 +1,7 @@
 import Logo from "../assets/logo.svg";
 import "../styles/header.css";
 import "../styles/utility.css";
-import { useState, useEffect } from 'react';  // Importando o useEffect
+import { useState, useEffect } from 'react'; 
 import Button from "../components/Button";
 import Close from "../assets/close.svg";
 import Menu from "../assets/hamburguer.svg";
@@ -12,14 +12,14 @@ export default function Header() {
 
     useEffect(() => {
         if (showMobileMenu) {
-            document.body.style.overflowY = 'hidden'; 
+            document.body.classList.add('scroll');
+
         } else {
-            document.body.style.overflowY = 'auto'; 
+            document.body.classList.remove('scroll');
         }
 
         return () => {
-            document.body.style.overflowY = 'auto';
-            console.log('tomanocu')
+            document.body.classList.remove('scroll');
         };
     }, [showMobileMenu]); 
 
