@@ -1,0 +1,64 @@
+/* Container principal */
+.contact-form-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Título pequeno */
+  .contact-form-subtitle {
+    color: #ff3b3b;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Título principal */
+  .contact-form-title {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #ff3b3b;
+  }
+  
+  /* Descrição */
+  .contact-form-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulário */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input e textarea */
+  .contact-form-input,
+  .contact-form-textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  /* Botão de envio */
+  .contact-form-button {
+    background-color: #ff3b3b;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Botão - Hover */
+  .contact-form-button:hover {
+    background-color: #e03a3a;
+  }
+  

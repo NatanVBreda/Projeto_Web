@@ -1,0 +1,99 @@
+/* Planos.css */
+
+.planos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .planos-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff3b3b;  /* Título na sua cor */
+  }
+  
+  .cards-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card.premium {
+    background: #ffe0e0;  /* Alterado para uma cor mais suave com sua cor */
+    border: 2px solid #ff3b3b;  /* Cor do card Premium */
+  }
+  
+  .highlight {
+    display: none;
+    background-color: #ff3b3b;  /* Cor do destaque */
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .highlight.show {
+    display: block;
+  }
+  
+  .type {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .price.premium {
+    color: #ff3b3b;  /* Cor para o preço Premium */
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .button {
+    background-color: #ff3b3b;  /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .button.premium {
+    background-color: #ff3b3b;  /* Cor do botão Premium */
+  }
+  
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .feature {
+    margin-bottom: 5px;
+  }
+  

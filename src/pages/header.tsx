@@ -32,7 +32,7 @@ export default function Header() {
                     <div className='desktop-only'>
                         <ul className="flex gap-1">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Lanches</a></li>
+                            <li><a href="#solutions">Lanches</a></li>
                             <li><a href="#">Avaliações</a></li>
                             <li><a href="#">Contato</a></li>
                         </ul>
