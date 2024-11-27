@@ -39,9 +39,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
       </div>
-      <div className="footer-bottom">
-        <p>Feito com amor na aula de Programação Web 💙 ©2024 AktieTech - Todos os direitos reservados.</p>
-      </div>
+      
     </footer>
   );
 };
