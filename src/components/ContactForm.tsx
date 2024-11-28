@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import '../styles/ContactForm.css';
 
 const ContactForm: React.FC = () => {
-  // Estados para gerenciar os inputs
+
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [status, setStatus] = useState<string | null>(null); // Para mostrar o status da requisição
+  const [status, setStatus] = useState<string | null>(null); 
 
-  // Função para tratar o envio do formulário
+  
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault(); // Impede o recarregamento da página
+    e.preventDefault();
 
-    // Validação básica
+    
     if (!email || !message) {
       setStatus('Por favor, preencha todos os campos.');
       return;
@@ -60,21 +60,21 @@ const ContactForm: React.FC = () => {
           placeholder="Seu melhor Email"
           className="contact-form-input"
           value={email}
-          onChange={(e) => setEmail(e.target.value)} // Atualiza o estado
+          onChange={(e) => setEmail(e.target.value)} 
           required
         />
         <textarea
           placeholder="Motivo do contato. Ex: Gostei muito do produto X, poderia me enviar um orçamento?"
           className="contact-form-textarea"
           value={message}
-          onChange={(e) => setMessage(e.target.value)} // Atualiza o estado
+          onChange={(e) => setMessage(e.target.value)} 
           required
         />
         <button type="submit" className="contact-form-button">
           Enviar
         </button>
       </form>
-      {status && <p className="contact-form-status">{status}</p>} {/* Mostra o status */}
+      {status && <p className="contact-form-status">{status}</p>} 
     </div>
   );
 };
